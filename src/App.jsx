@@ -59,7 +59,7 @@ export class App extends Component {
         const image = { id, webformatURL, largeImageURL };
         return image;
       });
-      this.setState({ images, query });
+      this.setState({ images, query, page: 1 });
     } catch (error) {
       this.setState({ error: error.message });
     } finally {
